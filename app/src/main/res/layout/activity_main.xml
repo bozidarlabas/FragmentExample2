@@ -7,9 +7,23 @@
     android:background="#00BBFF"
     android:id="@+id/mylayout">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+    <fragment
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
+        android:name="com.labas.bozidar.foi.fragmentexample2.FragmentA"
+        android:id="@+id/fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.labas.bozidar.foi.fragmentexample2.FragmentB"
+        android:id="@+id/fragment2"
+        android:layout_below="@+id/fragment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
